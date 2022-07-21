@@ -1,6 +1,6 @@
 {
-    "name": "packagist_package_here",
-    "description": "and_description_here",
+    "name": "open-southeners/laravel-attributes",
+    "description": "Extends the Laravel framework with useful PHP 8 attributes",
     "license": "MIT",
     "keywords": [
         "open-southeners"
@@ -23,8 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenSoutheners\\PhpPackage\\": "src",
-            "OpenSoutheners\\PhpPackage\\Tests\\": "tests"
+            "OpenSoutheners\\LaravelAttributes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenSoutheners\\LaravelAttributes\\Tests\\": "tests"
         }
     },
     "config": {
@@ -33,7 +37,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OpenSoutheners\\PhpPackage\\JsonApiServiceProvider"
+                "OpenSoutheners\\LaravelAttributes\\JsonApiServiceProvider"
             ]
         }
     },
